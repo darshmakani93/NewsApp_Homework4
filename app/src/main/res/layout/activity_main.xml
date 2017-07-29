@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context="com.example.darshmakani.newsapp.MainActivity"
+    android:weightSum="1">
+
+-->
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/news_url"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/news_api_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="20sp" />
+</ScrollView>-->
+
+    <!--Added a RecyclerView to your activity's layout-->
+
+    <!--<EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:textSize="22sp" />-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+
+<ProgressBar
+    android:layout_gravity="center"
+    android:visibility="invisible"
+    android:id="@+id/progress_bar"
+    android:layout_width="60dp"
+    android:layout_height="60dp" />
+
+</LinearLayout>
+
